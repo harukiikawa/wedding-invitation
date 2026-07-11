@@ -1,0 +1,122 @@
+.scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #666666;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    transition: color .3s;
+}
+
+.scroll.top {
+    top: 20px;
+}
+
+.scroll.bottom {
+    bottom: 20px;
+}
+
+.scroll:hover {
+    color: #333333;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
+}
+
+body {
+    transition: opacity .6s ease, transform .6s ease;
+    opacity: 1;
+}
+
+#page.fade-in-up {
+    animation: fade-in-up .6s ease forwards;
+}
+
+#page.fade-in-down {
+    animation: fade-in-down .6s ease forwards;
+}
+
+#page.fade-out-up {
+    animation: fade-out-up .5s ease forwards;
+}
+
+body.fade-out-up #header,
+body.fade-out-up .menu-button,
+body.fade-out-up .menu {
+    animation: header-fade-out-up .5s ease forwards;
+}
+
+#page.fade-out-down {
+    animation: fade-out-down .5s ease forwards;
+}
+
+body.fade-out-down #header,
+body.fade-out-down .menu-button,
+body.fade-out-down .menu {
+    animation: header-fade-out-down .5s ease forwards;
+}
+
+body.fade-in-up #header,
+body.fade-in-up .menu-button,
+body.fade-in-up .menu {
+    animation: header-fade-in-up .6s ease forwards;
+}
+
+body.fade-in-down #header,
+body.fade-in-down .menu-button,
+body.fade-in-down .menu {
+    animation: header-fade-in-down .6s ease forwards;
+}
+
+@keyframes fade-out-up {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes fade-out-down {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

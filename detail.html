@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wedding Invitation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- <div class="scroll-container"> -->
+    <div id="header"></div>
+
+    <div id="page">
+        <section id="greeting" class="greeting">
+        <div class="overlay">
+            <!-- <div class="scroll top">
+                ▲Scroll
+            </div> -->
+            <div class="detail_title">
+                greeting
+            </div>
+
+            <div class="context">
+                謹啓 残暑厳しき折<br>
+                皆様には いかがお過ごしでしょうか<br>
+
+                さて 私たち二人は くる10月25日に<br>
+                結婚式を挙げる運びとなりました<br>
+
+                つきましては 日頃お世話になっております皆様に<br>
+                感謝を込めて ささやかな小宴を催したく存じます<br>
+
+                まだまだ暑さが続く日々でございますので<br>
+                どうかご自愛くださいませ<br>
+
+                当日 皆様にお会いできることを<br>
+                心より楽しみにしております<br>
+
+            </div>
+
+            <div class="contrext_end">
+                <div id="end">
+                    敬白<br>
+                    2026年8月吉日
+                </div>
+                <div id="greeting_sign">
+                    生川 青輝<br>
+                    本間 琴梨
+                </div>
+            </div>
+            <!-- <div class="scroll">
+                    ▼Scroll
+                </div> -->
+        </div>
+
+    </section>
+
+    <section id="schedule" class="schedule">
+
+        <div class="overlay">
+            <div class="detail_title">
+                Schedule
+            </div>
+
+            <div class="title">
+                Date
+            </div>
+
+            <div class="subtitle">
+                2026.10.25 Sun
+            </div>
+
+            <div class="context">
+                挙　式　　午前10時30分<br>
+                披露宴　　午前11時30分<br>
+                (披露宴受付　午前11時より）
+            </div>
+
+            <!-- <div class="scroll">
+                    ▼Scroll
+                </div> -->
+        </div>
+    </section>
+
+    <section id="access" class="access">
+        <div class="overlay">
+            <div class="detail_title">
+                Access
+            </div>
+
+            <div class="title">
+                Place
+            </div>
+
+            <div class="subtitle">
+                綱町三井倶楽部
+            </div>
+            <div class="context">
+                〒108-0073<br>
+                東京都港区三田2-3-7<br>
+                TEL: 03-3453-3011
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.035788707672!2d139.73811837729585!3d35.65148987259695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ba4ebab5c71%3A0xdd04d7e7d9537410!2z57ax55S65LiJ5LqV5YC25qW96YOo!5e0!3m2!1sja!2sjp!4v1782129196075!5m2!1sja!2sjp"
+                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- <div class="scroll">
+                    ▼Scroll
+                </div> -->
+        </div>
+    </section>
+
+    <section id="note" class="note">
+
+        <div class="overlay">
+            <div class="detail_title">
+                Note
+            </div>
+
+            <div class="context">
+                着付けの事とか注意事項を記載する。
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+        <div class="overlay">
+            <div class="detail_title">
+                RSVP
+            </div>
+
+            <form id="rsvp-form">
+
+                <div class="form-group">
+                    <label>ご出欠<span>*</span></label>
+
+                    <div class="attendance">
+
+                        <input type="radio" id="attend" name="attendance" value="出席" checked>
+
+                        <label for="attend">
+                            慶んで出席いたします
+                        </label>
+
+                        <input type="radio" id="absent" name="attendance" value="欠席">
+
+                        <label for="absent">
+                            残念ながら欠席いたします
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="name-row">
+
+                    <div class="form-group">
+                        <label>苗字 <span>*</span></label>
+                        <input type="text" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>名前 <span>*</span></label>
+                        <input type="text" name="firstName" required>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label>メールアドレス<span>*</span></label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>アレルギー</label>
+
+                    <textarea name="allergy" rows="3" placeholder="なしの場合は『なし』とご記入ください"></textarea>
+
+                </div>
+
+                <!-- 交通手段 -->
+                <div class="form-group">
+
+                    <label class="section-label">ご来場方法</label>
+
+                    <div class="transport">
+
+                        <input type="radio" id="train" name="transportation" value="電車">
+                        <label for="train">🚃 電車</label>
+
+                        <input type="radio" id="car" name="transportation" value="車">
+                        <label for="car">🚗 車</label>
+
+                        <input type="radio" id="plane" name="transportation" value="飛行機">
+                        <label for="plane">✈ 飛行機</label>
+
+                        <input type="radio" id="other" name="transportation" value="その他">
+                        <label for="other">その他</label>
+
+                    </div>
+
+                </div>
+
+                <!-- 宿泊 -->
+                <div class="check-item">
+
+                    <input type="checkbox" id="hotel" name="accommodation" value="希望する">
+
+                    <label for="hotel">
+                        宿泊を希望します
+                    </label>
+
+                </div>
+
+                <!-- 着付け -->
+                <div class="check-item">
+
+                    <input type="checkbox" id="dress" name="dressing" value="希望する">
+
+                    <label for="dress">
+                        着付けを希望します
+                    </label>
+
+                </div>
+
+                <!-- 写真掲載 -->
+                <div class="check-item">
+
+                    <input type="checkbox" id="photo" name="photoPermission" value="OK">
+
+                    <label for="photo">
+                        写真掲載を許可します
+                    </label>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>同伴者</label>
+
+                    <input type="text" name="companion">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>メッセージ</label>
+
+                    <textarea name="message" rows="5"></textarea>
+
+                </div>
+
+                <button id="submitButton" type="submit">
+
+                    送信する
+
+                </button>
+
+            </form>
+
+            <div id="loading" style="display:none;">
+                送信中...
+            </div>
+
+            <div id="result"></div>
+        </div>
+    </section>
+    </div>
+    <!-- </div> -->
+
+    <script src="js/menu.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/rsvp.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/detail.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+﻿@media(max-width:600px) {
+    .transport {
+        justify-content: center;
+    }
+
+    .transport label {
+        flex: 1 1 40%;
+        text-align: center;
+    }
+}
