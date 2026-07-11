@@ -5,6 +5,18 @@ const TRANSITION_KEY = "pageTransitionDirection";
 let moved = false;
 let touchStartY = 0;
 
+function isAtFirstGreetingTop() {
+    const firstSection = document.getElementById("greeting");
+    const scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
+
+    if (!firstSection) {
+        return scrollTop <= 80;
+    }
+
+    const rect = firstSection.getBoundingClientRect();
+    return scrollTop <= 80 && rect.top >= -40 && rect.top <= 140;
+}
+
 /**
  * ページ表示時のフェードイン
  */
@@ -109,6 +121,8 @@ function initTransition(options) {
 
         if (moved) return;
 
+        const atTop = isAtFirstGreetingTop();
+
         // 下スクロールで遷移
         if (
 
@@ -129,8 +143,8 @@ function initTransition(options) {
         if (
 
             wheel === "up" &&
-            window.scrollY <= 5 &&
-            e.deltaY < -30
+            atTop &&
+            e.deltaY < -8
 
         ) {
 
@@ -165,11 +179,13 @@ function initTransition(options) {
 
         const touchEndY =
             e.changedTouches[0].clientY;
+        const atTop = isAtFirstGreetingTop();
 
         // 上スワイプ
         if (
 
             swipe === "up" &&
+            atTop &&
             touchStartY - touchEndY > 80
 
         ) {
@@ -186,8 +202,8 @@ function initTransition(options) {
         if (
 
             swipe === "down" &&
-            touchEndY - touchStartY > 80 &&
-            window.scrollY <= 5
+            atTop &&
+            touchEndY - touchStartY > 80
 
         ) {
 

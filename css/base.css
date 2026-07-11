@@ -5,16 +5,24 @@
 }
 
 html,
-body{
+body {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background: #ffffff;
-    /* display:flex; */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-family: 'Times New Roman', serif;
+}
+
+body,
+#page,
+section {
+    margin: 0;
+    padding: 0;
 }

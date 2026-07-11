@@ -17,7 +17,7 @@
 }
 
 .form-group {
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     text-align: left;
 }
 
@@ -32,7 +32,7 @@
 .form-group textarea,
 .form-group select {
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 15px;
@@ -40,7 +40,7 @@
 
 .name-row {
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
     width: 100%;
     max-width: 600px;
 }
@@ -78,6 +78,28 @@
     pointer-events: none;
     transform: translate(8px, 8px);
     opacity: .45;
+}
+
+.rsvp_container,
+.greeting_container {
+    background: rgba(255, 250, 242, 0.9);
+    border: 1px solid rgba(184, 157, 106, 0.25);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    max-width: 620px;
+    width: 100%;
+}
+
+.greeting_container {
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greeting_container .contrext_end {
+    align-self: flex-end;
 }
 
 .rsvp .invitation-card .detail_title {
@@ -130,8 +152,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80px;
-    padding: 12px;
+    min-height: 50px;
+    /* padding: 12px; */
     border: 1px solid #ddd;
     border-radius: 12px;
     cursor: pointer;
