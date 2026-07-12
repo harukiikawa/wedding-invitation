@@ -153,8 +153,9 @@ iframe {
     align-items: center;
     width: 100%;
     max-width: 350px;
-    height: auto;
+    height: 270px;
     aspect-ratio: 1;
+    gap : 15px;
 }
 
 .access-image {

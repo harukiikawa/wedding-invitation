@@ -1,6 +1,6 @@
 /* タイトル */
 .cover_title {
-    font-family: 'Italianno', cursive;
+    font-family: 'Pinyon Script', cursive;
     font-size: 80px;
     font-weight: normal;
     line-height: 1.2;
@@ -11,15 +11,15 @@
 }
 
 .detail_title {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Pinyon Script', serif;
     font-size: 48px;
     font-weight: normal;
     letter-spacing: 4px;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
-    text-transform: uppercase;
-    color: #333333;
-    margin: 30px 0 40px;
+    /* text-transform: uppercase; */
+    color: #1f416d;
+    margin: 40px 0 0;
 }
 
 #names {
@@ -62,7 +62,7 @@
     letter-spacing: 0.6px;
     max-width: 350px;
     margin: 0 auto 0px;
-    text-align: center;
+    text-align: left;
     text-shadow: none;
 }
 
@@ -80,6 +80,17 @@
     text-shadow: none;
 }
 
+.schedule-context {
+    position: relative;
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.9;
+    letter-spacing: 0.6px;
+    max-width: 350px;
+    margin: 0 auto 0px;
+    text-align: center;
+    text-shadow: none;
+}
 .note-board {
     width: min(100%, 620px);
     padding: 24px 26px;
