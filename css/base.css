@@ -6,6 +6,7 @@
 
 html,
 body {
+    font-family: "Noto Serif JP", serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
     margin: 0;

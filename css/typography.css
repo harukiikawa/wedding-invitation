@@ -1,58 +1,90 @@
 /* タイトル */
 .cover_title {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 80px;
-    font-weight: normal;
-    line-height: 1.2;
-    letter-spacing: 4px;
+    font-family: 'Italianno', cursive;
+    font-size: 100px;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55), 0 0 24px rgba(0, 0, 0, 0.25);
-    margin-bottom: 150px;
-    color: #fffdf7;
+    color: #e6e7e5;
+    transform: translateY(-80px);
 }
 
-.detail_title {
-    font-family: 'Pinyon Script', serif;
-    font-size: 48px;
+.detail_green_title {
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
     font-weight: normal;
     letter-spacing: 4px;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
     margin-bottom: 40px;
-    /* text-transform: uppercase; */
-    color: #1f416d;
-    margin: 40px 0 0;
+    color: #364d33;
+    margin: 90px 0 0;
 }
 
-#names {
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
-    color: #fffdf7;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+.detail_white_title {
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 40px;
+    color: #e6e7e5;
+    margin: 90px 0 0;
 }
 
-#date {
-    font-size: 30px;
-    letter-spacing: 2px;
-    opacity: 0.98;
-    color: #fffdf7;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
-}
 
-.title {
+
+.cover_subtitle{
+    font-family: "Times New Roman", Times, serif;
     font-size: 18px;
+    /* font-weight: 300;
+    margin-bottom: 15px; */
+    letter-spacing: 2px;
+    color: #e6e7e5;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55), 0 0 24px rgba(0, 0, 0, 0.25);
+
+    margin-top:40px;
+    transform:translateY(150px);
+}
+.place-title {
+    font-size: 30px;
     font-weight: normal;
     letter-spacing: 3px;
     margin: 30px 0 15px;
     text-transform: uppercase;
-    color: #333333;
+    color: #e6e7e5;
 }
 
-.subtitle {
+.white-context {
+    position: relative;
+    color: #e6e7e5;
+    font-size: 15px;
+    line-height: 1.9;
+    letter-spacing: 0.6px;
+    max-width: 350px;
+    margin: 0 auto 0px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.white-context-l {
+    position: relative;
+    color: #e6e7e5;
+    font-size: 15px;
+    line-height: 1.9;
+    letter-spacing: 0.6px;
+    max-width: 350px;
+    margin: 0 auto 0px;
+    text-align: left;
+    text-shadow: none;
+}
+
+
+.access-subtitle {
     font-size: 16px;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    color: #333333;
+    color: #e6e7e5;
+    text-align: left;
 }
 .context {
     position: relative;
@@ -75,12 +107,12 @@
     display: block;
     width: fit-content;
     max-width: 350px;
-    margin: 0 0 20px auto;
+    /* margin: 0 0 20px 0; */
     text-align: right;
     text-shadow: none;
 }
 
-.schedule-context {
+/* .schedule-context {
     position: relative;
     color: #555555;
     font-size: 15px;
@@ -90,7 +122,7 @@
     margin: 0 auto 0px;
     text-align: center;
     text-shadow: none;
-}
+} */
 .note-board {
     width: min(100%, 620px);
     padding: 24px 26px;
@@ -121,7 +153,7 @@
 
 .access_context {
     position: relative;
-    color: #555555;
+    color:#e6e7e5;
     font-size: 12px;
     line-height: 1.9;
     letter-spacing: 0.6px;
@@ -129,4 +161,55 @@
     margin: 0 35px 20px;
     text-align: left;
     text-shadow: none;
+}
+
+
+.schedule-date{
+    color: #e6e7e5;
+    letter-spacing: 0.6px;
+    margin: 0 auto 0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.date-main{
+    font-family:'Pinyon Script', cursive;
+    font-size:60px;
+}
+
+.date-side{
+    font-family: 'Italianno', cursive;
+    font-size:30px;
+    width: 120px;              /* 線の長さ */
+    text-align: center;
+
+    border-top: 1px solid rgba(255,255,255,.8);
+    border-bottom: 1px solid rgba(255,255,255,.8);
+}
+
+.time{
+    font-family: 'Italianno', cursive;
+    font-size:40px;
+}
+
+.event{
+    font-size:20px
+}
+
+.event>h3{
+    margin:0;
+    color:#e6e7e5;
+    text-align: left;
+    transform: translate(70px,10px);
+}
+
+.event>p{
+    font-family: 'Italianno', cursive;
+    margin:0;
+    color:#e6e7e5;
+    opacity: 0.5;
+    text-align:left;
+    transform: translateX(120px);
 }

@@ -1,0 +1,115 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#header header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1px 24px;
+}
+
+/* index.htmlは透明 */
+body.page-index #header {
+    background: transparent;
+}
+
+/* detail.htmlは背景あり */
+body.page-detail #header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 左側 */
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+/* 右側 */
+.right-header {
+    display: flex;
+    align-items: center;
+}
+/* ロゴ */
+.logo {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+.menu-button {
+    width: 40px;
+    height: auto;
+    z-index: 2000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 0;
+    margin: 0;
+
+    background: transparent;
+    border: none;
+}
+
+.menu-button span {
+    width: 22px;
+    height: 2px;
+    background: #000000;
+    transition: .3s;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    border: 1px solid #364d33;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 40px;
+    transition: transform .3s ease, opacity .3s ease, visibility .3s ease;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.menu.open {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #364d33;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+.menu-button.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+/* .menu-button.open span:nth-child(2) {
+    opacity: 0;
+} */
+
+.menu-button.open span:nth-child(2) {
+    transform: translateY(-1px) rotate(-45deg);
+}
