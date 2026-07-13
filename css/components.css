@@ -3,8 +3,8 @@
     margin-top: 50px;
     padding: 15px;
     border: none;
-    background: #b69d74;
-    color: white;
+    background: #364d33;
+    color: #e6e7e5;
     border-radius: 30px;
     font-size: 18px;
     letter-spacing: 2px;
@@ -23,8 +23,8 @@
 
 .form-group label {
     display: block;
-    margin-bottom: 6px;
-    color: #333;
+    margin-top: 6px;
+    color: #555555;
     font-size: 15px;
 }
 
@@ -33,7 +33,7 @@
 .form-group select {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #e6e7e5;
     border-radius: 8px;
     font-size: 15px;
 }
@@ -51,13 +51,13 @@
 
 #loading,
 #result {
-    color: #333333;
+    color: #364d33;
     margin-top: 20px;
     font-size: 16px;
     text-align: center;
 }
 
-.rsvp .invitation-card {
+/* .rsvp {
     background: #fff9f1;
     border: 1px solid rgba(184, 157, 106, 0.25);
     box-shadow: 0 32px 80px rgba(76, 60, 45, 0.08);
@@ -78,7 +78,7 @@
     pointer-events: none;
     transform: translate(8px, 8px);
     opacity: .45;
-}
+} */
 
 .rsvp_container,
 .greeting_container {
@@ -106,29 +106,29 @@
     margin: 0 0 30px;
 }
 
-.rsvp .invitation-card .detail_title {
+.rsvp .detail_title {
     margin: 0 0 24px;
     color: #2c2c2c;
 }
 
-.rsvp .invitation-card form {
+.rsvp form {
     display: grid;
     gap: 14px;
 }
 
-.rsvp .invitation-card .form-group label,
-.rsvp .invitation-card .section-label {
+.rsvp .form-group label,
+.rsvp .section-label {
     color: #4a4a4a;
 }
 
-.rsvp .invitation-card .attendance label,
-.rsvp .invitation-card .transport label,
-.rsvp .invitation-card .check-item label {
-    background: #fbf5ea;
+.rsvp .attendance label,
+.rsvp .transport label,
+.rsvp .check-item label {
+    background: #e6e7e5;
 }
 
-.rsvp .invitation-card button {
-    background: #8b6a38;
+.rsvp button {
+    background: #364d33;
     width: auto;
     margin: 0;
 }
@@ -137,13 +137,13 @@
     display: block;
     margin-bottom: 15px;
     font-size: 17px;
-    color: #333;
+    color: #364d33;
     letter-spacing: 2px;
 }
 
 .attendance {
     display: flex;
-    gap: 15px;
+    /* gap: 15px; */
     flex-wrap: nowrap;
 }
 
@@ -156,23 +156,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50px;
+    min-height: 40px;
     /* padding: 12px; */
     border: 1px solid #ddd;
     border-radius: 12px;
     cursor: pointer;
     transition: .25s;
-    background: white;
+    /* background: #e6e7e5; */
 }
 
 .attendance input:checked + label {
-    background: #f7f3ec;
-    border: 2px solid #b89d6a;
-    color: #8b6a38;
+    /* background: #e6e7e5; */
+    border: 2px solid #364d33;
+    color: #555555;
     font-weight: bold;
 }
 
-.transport {
+/* .transport {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -198,7 +198,7 @@
     background: #b89d6a;
     color: white;
     border-color: #b89d6a;
-}
+} */
 
 .check-item {
     margin-top: 14px;
@@ -206,13 +206,13 @@
     align-items: center;
     gap: 10px;
     font-size: 16px;
-    color: #444;
+    color: #364d33;
 }
 
 .check-item input {
     width: 20px;
     height: 20px;
-    accent-color: #b89d6a;
+    accent-color: #364d33;
 }
 
 
@@ -231,7 +231,7 @@
 
 .line{
     position:relative;
-    width:80px;
+    width:40px;
     height:100%;
 }
 
@@ -244,7 +244,7 @@
     width:2px;
     height:100%;
 
-    background:white;
+    background:#e6e7e5;
 
     transform:translateX(-50%);
 }
@@ -256,7 +256,7 @@
 
     border-radius:50%;
 
-    background:white;
+    background:#e6e7e5;
 
     position:absolute;
 

@@ -1,0 +1,46 @@
+.footer-button {
+    position: fixed;
+    left: 30px;
+    bottom: 40px;
+
+    width: 58px;
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.25em;
+
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.15),
+        inset 0 1px 1px rgba(255, 255, 255, 0.25);
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+.footer-button:hover {
+    transform: translateY(-8px) scale(1.03);
+
+    background: rgba(255, 255, 255, 0.25);
+
+    box-shadow:
+        0 16px 36px rgba(0, 0, 0, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.35);
+}
