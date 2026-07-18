@@ -72,6 +72,70 @@ async function init() {
     ["scroll","touchstart","mousemove"].forEach(event=>{
         window.addEventListener(event,showButtonLater);
     });
+    const lightSections = document.querySelectorAll(".greeting");
+
+    const colorObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+                document
+                    .querySelector(".scroll-indicator")
+                    ?.classList.add("dark-mode");
+            }else{
+                document
+                    .querySelector(".scroll-indicator")
+                    ?.classList.remove("dark-mode");
+            }
+
+        });
+
+    },{
+        threshold:0.5
+    });
+
+    lightSections.forEach(section=>{
+        colorObserver.observe(section);
+    });
 }
 
 window.addEventListener("DOMContentLoaded", init);
+
+
+window.addEventListener("load", () => {
+
+    const loading = document.getElementById("loading");
+    const page = document.getElementById("page");
+
+    if (!page) return;
+
+    // loading が既に削除されている
+    if (!loading) {
+        page.classList.add("show");
+        return;
+    }
+
+    if (sessionStorage.getItem("loadingPlayed")) {
+        loading.remove();
+        page.classList.add("show");
+        return;
+    }
+
+    sessionStorage.setItem("loadingPlayed", "true");
+
+    setTimeout(() => {
+
+        loading.classList.add("hide");
+
+        // 少し待ってからCoverを表示
+        setTimeout(() => {
+            page.classList.add("show");
+        }, 400);
+
+        setTimeout(() => {
+            loading.remove();
+        }, 900);
+
+    }, 1800);
+
+});

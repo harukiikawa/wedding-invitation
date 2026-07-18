@@ -18,7 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Times New Roman', serif;
+    /* font-family: 'Times New Roman', serif; */
+    font-family: 'Shippori Mincho', serif;
 }
 
 body,

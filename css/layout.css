@@ -19,7 +19,7 @@ body.page-detail {
 .schedule,
 .access,
 .note,
-.rsvp {
+.form {
     /* position: relative; */
     width: 100%;
     min-height: 100vh;
@@ -32,8 +32,10 @@ body.page-detail {
 .cover,
 .greeting,
 .note,
-.rsvp {
-    background: #ffffff;
+.form {
+    background:url("../images/white.png");
+    background-size: 400px auto;
+    background-repeat: repeat;
 }
 
 .schedule,

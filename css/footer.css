@@ -1,3 +1,11 @@
+#footer{
+    background:url("../images/black.png");
+
+    background-size: 400px auto;
+    background-repeat: repeat;
+    font-family: 'Times New Roman', serif;
+}
+
 .footer-button {
     position: fixed;
     right: 20px;
@@ -88,6 +96,15 @@
 
     animation: scrollDot 1.8s ease-in-out infinite;
 }
+
+.scroll-indicator.dark-mode .scroll-text{
+    color: rgba(0,0,0,.8);
+}
+
+.scroll-indicator.dark-mode .scroll-line{
+    background: rgba(0,0,0,.35);
+}
+
 
 @keyframes scrollDot{
 
