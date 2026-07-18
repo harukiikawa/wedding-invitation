@@ -24,11 +24,11 @@
                 <!-- <div class="scroll top">
                 ▲Scroll
             </div> -->
-                <div class="detail_green_title">
+                <div class="detail-green-title">
                     Greeting
                 </div>
 
-                <div class="greeting_container">
+                <div class="greeting-container">
                     <div class="context">
                         <div class="sub-context">
                             残暑厳しき折 皆様には健やかに<br>
@@ -54,7 +54,7 @@
 
                     </div>
 
-                    <div class="contrext_end">
+                    <div class="contrext-end">
                         2026年8月吉日<br>
                         生川 青輝<br>
                         本間 琴梨
@@ -69,7 +69,7 @@
         <section id="schedule" class="schedule">
 
             <div class="overlay">
-                <div class="detail_white_title">
+                <div class="detail-white-title">
                     Schedule
                 </div>
 
@@ -148,7 +148,7 @@
 
         <section id="access" class="access">
             <div class="overlay">
-                <div class="detail_white_title">
+                <div class="detail-white-title">
                     Place
                 </div>
 
@@ -161,7 +161,7 @@
                     TEL: 03-3453-3011
                 </div>
 
-                <div class="detail_white_title">
+                <div class="detail-white-title">
                     Access
                 </div>
 
@@ -169,24 +169,27 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.035788707672!2d139.73811837729585!3d35.65148987259695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ba4ebab5c71%3A0xdd04d7e7d9537410!2z57ax55S65LiJ5LqV5YC25qW96YOo!5e0!3m2!1sja!2sjp!4v1782129196075!5m2!1sja!2sjp"
                     width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="access-subtitle">
-                    | 電車をご利用の方
-                </div>
-                <div class="access_context">
-                    東京メトロ南北線・都営大江戸線 …麻布十番 徒歩8分<br>
-                    都営大江戸線 …赤羽橋 徒歩8分<br>
-                    都営三田線 …芝公園 徒歩13分<br>
-                    都営浅草線 …三田 徒歩15分<br>
-                    JR（山手線・京浜東北線）…田町 徒歩15分<br>
-                </div>
-                <div class="access-subtitle">
-                    | バスをご利用の方
-                </div>
-                <div class="access_context">
-                    都06（渋谷駅前-新橋駅前）…二の橋 徒歩5分<br>
-                    反96（五反田駅行・品川車庫行 他）…二の橋 徒歩5分<br>
-                    田87（渋谷駅-田町駅）…慶応義塾大学前 徒歩7分<br>
-                    東98（等々力駅前-東京駅南口）…赤羽橋 徒歩7分<br>
+
+                <div class="" access-container>
+                    <div class="access-subtitle">
+                        | 電車をご利用の方
+                    </div>
+                    <div class="access-context">
+                        東京メトロ南北線・都営大江戸線 …麻布十番 徒歩8分<br>
+                        都営大江戸線 …赤羽橋 徒歩8分<br>
+                        都営三田線 …芝公園 徒歩13分<br>
+                        都営浅草線 …三田 徒歩15分<br>
+                        JR（山手線・京浜東北線）…田町 徒歩15分<br>
+                    </div>
+                    <div class="access-subtitle">
+                        | バスをご利用の方
+                    </div>
+                    <div class="access-context">
+                        都06（渋谷駅前-新橋駅前）…二の橋 徒歩5分<br>
+                        反96（五反田駅行・品川車庫行 他）…二の橋 徒歩5分<br>
+                        田87（渋谷駅-田町駅）…慶応義塾大学前 徒歩7分<br>
+                        東98（等々力駅前-東京駅南口）…赤羽橋 徒歩7分<br>
+                    </div>
                 </div>
 
                 <div class="white-context">
@@ -197,146 +200,147 @@
             </div>
         </section>
 
+        <div id="footer-hide-area">
+            <section id="form" class="form">
+                <div class="overlay">
+                    <div class="detail-green-title">
+                        Form
+                    </div>
+                    <div class="rsvp-container">
+                        <form id="rsvp-form">
 
-        <section id="form" class="form">
-            <div class="overlay">
-                <div class="detail_green_title">
-                    Form
-                </div>
-                <div class="rsvp_container">
-                    <form id="rsvp-form">
+                            <div class="form-group">
+                                <label>ご出欠<span>*</span></label>
 
-                        <div class="form-group">
-                            <label>ご出欠<span>*</span></label>
+                                <div class="attendance">
 
-                            <div class="attendance">
+                                    <input type="radio" id="attend" name="attendance" value="出席" checked>
 
-                                <input type="radio" id="attend" name="attendance" value="出席" checked>
+                                    <label for="attend">
+                                        出席
+                                    </label>
 
-                                <label for="attend">
-                                    出席
+                                    <input type="radio" id="absent" name="attendance" value="欠席">
+
+                                    <label for="absent">
+                                        欠席
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <div class="name-row">
+
+                                <div class="form-group">
+                                    <label>姓 <span>*</span></label>
+                                    <input type="text" name="lastName" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>名 <span>*</span></label>
+                                    <input type="text" name="firstName" required>
+                                </div>
+
+                            </div>
+
+                            <div class="name-row">
+                                <div class="form-group">
+                                    <label>Family Name<span>*</span></label>
+                                    <input type="text" name="familyNameroma" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>First Name<span>*</span></label>
+                                    <input type="text" name="firstNameroma" required>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>アレルギー</label>
+
+                                <textarea name="allergy" rows="3" placeholder="なしの場合は『なし』とご記入ください"></textarea>
+
+                            </div>
+
+                            <!-- 着付け -->
+                            <div class="check-item">
+
+                                <input type="checkbox" id="dress" name="dressing" value="希望する">
+
+                                <label for="dress">
+                                    着付けを希望します
                                 </label>
 
-                                <input type="radio" id="absent" name="attendance" value="欠席">
-
-                                <label for="absent">
-                                    欠席
-                                </label>
-
                             </div>
-                        </div>
 
-                        <div class="name-row">
 
                             <div class="form-group">
-                                <label>姓 <span>*</span></label>
-                                <input type="text" name="lastName" required>
+
+                                <label>同伴者</label>
+
+                                <input type="text" name="companion">
+
                             </div>
 
                             <div class="form-group">
-                                <label>名 <span>*</span></label>
-                                <input type="text" name="firstName" required>
+
+                                <label>メッセージ</label>
+
+                                <textarea name="message" rows="5"></textarea>
+
                             </div>
 
-                        </div>
+                            <button id="submitButton" type="submit">
 
-                        <div class="name-row">
-                            <div class="form-group">
-                                <label>Family Name<span>*</span></label>
-                                <input type="text" name="familyNameroma" required>
-                            </div>
-                            <div class="form-group">
-                                <label>First Name<span>*</span></label>
-                                <input type="text" name="firstNameroma" required>
-                            </div>
-                        </div>
+                                送信する
 
+                            </button>
 
-                        <div class="form-group">
-                            <label>アレルギー</label>
+                        </form>
+                    </div>
 
-                            <textarea name="allergy" rows="3" placeholder="なしの場合は『なし』とご記入ください"></textarea>
+                    <div id="loading" style="display:none;">
+                        送信中...
+                    </div>
 
-                        </div>
-
-                        <!-- 着付け -->
-                        <div class="check-item">
-
-                            <input type="checkbox" id="dress" name="dressing" value="希望する">
-
-                            <label for="dress">
-                                着付けを希望します
-                            </label>
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label>同伴者</label>
-
-                            <input type="text" name="companion">
-
-                        </div>
-
-                        <div class="form-group">
-
-                            <label>メッセージ</label>
-
-                            <textarea name="message" rows="5"></textarea>
-
-                        </div>
-
-                        <button id="submitButton" type="submit">
-
-                            送信する
-
-                        </button>
-
-                    </form>
+                    <div id="result"></div>
                 </div>
+            </section>
 
-                <div id="loading" style="display:none;">
-                    送信中...
-                </div>
+            <section id="note" class="note">
 
-                <div id="result"></div>
-            </div>
-        </section>
-
-        <section id="note" class="note">
-
-            <div class="overlay">
-                <div class="detail_green_title">
-                    Note
-                </div>
-                <div class="note-board">
-                    <div class="note-subtitle">
-                        2次会について
+                <div class="overlay">
+                    <div class="detail-green-title">
+                        Note
                     </div>
-                    <div class="note-context">
-                        2次会参加の方はこちらにもご回答ください<br>
-                        ↓↓<br>
-                        ＜URL＞
-                    </div>
-                    <div class="note-subtitle">
-                        オンラインご祝儀について
-                    </div>
-                    <div class="note-context">
-                        オンラインご祝儀ご希望の方はこちらにご送付いただけますと幸いです<br>
-                        ↓↓<br>
-                        ＜bank account＞
-                    </div>
-                    <div class="note-subtitle">
-                        着付けについて
-                    </div>
-                    <div class="note-context">
-                        着付けご希望の場合は、下記の出欠確認フォームでご登録ください。<br>
-                        金額は〇〇になります。
+                    <div class="note-board">
+                        <div class="note-subtitle">
+                            2次会について
+                        </div>
+                        <div class="note-context">
+                            2次会参加の方はこちらにもご回答ください<br>
+                            ↓↓<br>
+                            ＜URL＞
+                        </div>
+                        <div class="note-subtitle">
+                            オンラインご祝儀について
+                        </div>
+                        <div class="note-context">
+                            オンラインご祝儀ご希望の方はこちらにご送付いただけますと幸いです<br>
+                            ↓↓<br>
+                            ＜bank account＞
+                        </div>
+                        <div class="note-subtitle">
+                            着付けについて
+                        </div>
+                        <div class="note-context">
+                            着付けご希望の場合は、下記の出欠確認フォームでご登録ください。<br>
+                            金額は〇〇になります。
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
     <div id="footer"></div>
 
