@@ -19,51 +19,102 @@
     <div id="header"></div>
 
     <div id="page">
-        <section id="greeting" class="greeting">
-            <div class="overlay">
+        <div id="bow-black">
+            <section id="greeting" class="greeting">
+                <div class="overlay">
 
-                <div class="detail-green-title">
-                    Greeting
-                </div>
-
-                <div class="greeting-container">
-                    <div class="context">
-                        <div class="sub-context">
-                            残暑厳しき折 皆様には健やかに<br>
-                            お過ごしのこととお慶び申し上げます
-                        </div>
-                        <div class="sub-context">
-                            この度 私たち二人は<br>
-                            結婚式を挙げる運びとなりました
-                        </div>
-                        <div class="sub-context">
-                            日頃の感謝を込めまして<br>
-                            ささやかな小宴を催したく存じます
-                        </div>
-                        <div class="sub-context">
-                            まだまだ暑さが続きますので<br>
-                            くれぐれもご自愛くださいませ
-                        </div>
-                        <div class="sub-context">
-                            当日お会いできますことを<br>
-                            心より楽しみにしております
-                        </div>
-
-
+                    <div class="detail-green-title">
+                        Greeting
                     </div>
 
-                    <div class="contrext-end">
-                        2026年8月吉日<br>
-                        生川 青輝<br>
-                        本間 琴梨
+                    <div class="greeting-container">
+                        <div class="context">
+                            <div class="sub-context">
+                                残暑厳しき折 皆様には健やかに<br>
+                                お過ごしのこととお慶び申し上げます
+                            </div>
+                            <div class="sub-context">
+                                この度 私たち二人は<br>
+                                結婚式を挙げる運びとなりました
+                            </div>
+                            <div class="sub-context">
+                                日頃の感謝を込めまして<br>
+                                ささやかな小宴を催したく存じます
+                            </div>
+                            <div class="sub-context">
+                                まだまだ暑さが続きますので<br>
+                                くれぐれもご自愛くださいませ
+                            </div>
+                            <div class="sub-context">
+                                当日お会いできますことを<br>
+                                心より楽しみにしております
+                            </div>
+
+
+                        </div>
+
+                        <div class="contrext-end">
+                            2026年8月吉日<br>
+                            生川 青輝<br>
+                            本間 琴梨
+                        </div>
+
+                    </div>
+                    <img class="section-image" src="images/greeting.jpg" alt="Wedding greeting image">
+                </div>
+
+            </section>
+            <section id="host" class="host">
+                <div class="overlay">
+
+                    <div class="detail-green-title">
+                        Host
                     </div>
 
+                    <div class="host-container">
+                        <div class="personal">
+                            <img class="host-image" src="images/haruki.jpg" alt="haruki">
+                            <div class="host-label">
+                                Haruki
+                            </div>
+                            <div class="context">
+                                <div class="sub-context">
+                                    楽しんでください
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="personal">
+                            <img class="host-image" src="images/cotori.jpg" alt="cotori">
+                            <div class="host-label">
+                                Cotori
+                            </div>
+                            <div class="context">
+                                <div class="sub-context">
+                                    楽しんでください
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-green-title">
+                        Count Down
+                    </div>
+                    <iframe src="components/countdown.html" style="
+                        width:100%;
+                        aspect-ratio:16/9;
+                        border:none;
+                        overflow:hidden;
+                        background:transparent;
+                    ">
+                    </iframe>
+
+
+                    <img class="section-image" src="images/host.jpg" alt="host image">
                 </div>
-                <img class="greeting-image" src="images/greeting.jpg" alt="Wedding greeting image">
-            </div>
 
-        </section>
-
+            </section>
+        </div>
         <section id="schedule" class="schedule">
 
             <div class="overlay">
@@ -140,7 +191,7 @@
                 </p>
 
 
-                <img class="schedule-image" src="images/schedule.jpg" alt="schedule image">
+                <img class="section-image" src="images/schedule.jpg" alt="schedule image">
             </div>
         </section>
 
@@ -165,7 +216,7 @@
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.035788707672!2d139.73811837729585!3d35.65148987259695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ba4ebab5c71%3A0xdd04d7e7d9537410!2z57ax55S65LiJ5LqV5YC25qW96YOo!5e0!3m2!1sja!2sjp!4v1782129196075!5m2!1sja!2sjp"
-                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="300" style="border:0;border-radius:0" ; allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 <div class="" access-container>
@@ -194,7 +245,7 @@
                     会場周辺は坂道が多いため<br>
                     足元にお気をつけてお越しくださいませ
                 </div>
-                <img class="access-image" src="images/access.jpg" alt="access image">
+                <img class="section-image" src="images/access.jpg" alt="access image">
             </div>
         </section>
 
@@ -302,6 +353,7 @@
                     </div>
 
                     <div id="result"></div>
+                    <img class="section-image" src="images/form.jpg" alt="form image">
                 </div>
             </section>
 
@@ -338,9 +390,18 @@
                     </div>
                 </div>
             </section>
+            <div id="footer"></div>
         </div>
     </div>
-    <div id="footer"></div>
+    <div class="scroll-indicator floating-ui">
+        <span class="scroll-text">SCROLL</span>
+        <span class="scroll-line">
+            <span class="scroll-dot"></span>
+        </span>
+
+    </div>
+    <a href="detail.html#form" class="footer-button floating-ui">Form</a>
+
 
     <script src="js/menu.js"></script>
     <script src="js/transition.js"></script>

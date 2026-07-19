@@ -70,9 +70,17 @@ async function init() {
     showButtonLater();
 
     ["scroll","touchstart","mousemove"].forEach(event=>{
-        window.addEventListener(event,showButtonLater);
+
+        window.addEventListener(event,()=>{
+
+            if(!formVisible){
+                showButtonLater();
+            }
+
+        });
+
     });
-    const lightSections = document.querySelectorAll(".greeting");
+    const lightSections = document.querySelectorAll("#bow-black");
 
     const colorObserver = new IntersectionObserver((entries) => {
 
