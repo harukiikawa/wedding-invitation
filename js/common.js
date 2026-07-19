@@ -80,32 +80,33 @@ async function init() {
         });
 
     });
-    const lightSections = document.querySelectorAll("#bow-black");
 
-    const colorObserver = new IntersectionObserver((entries) => {
+    const indicator = document.querySelector(".scroll-indicator");
+    const lightSections = document.querySelectorAll(".greeting, .host");
 
-        entries.forEach(entry => {
+    const colorObserver = new IntersectionObserver(() => {
 
-            if(entry.isIntersecting){
-                document
-                    .querySelector(".scroll-indicator")
-                    ?.classList.add("dark-mode");
-            }else{
-                document
-                    .querySelector(".scroll-indicator")
-                    ?.classList.remove("dark-mode");
-            }
+        const active = [...lightSections].some(section => {
+            const rect = section.getBoundingClientRect();
 
+            return (
+                rect.top < window.innerHeight * 0.5 &&
+                rect.bottom > window.innerHeight * 0.5
+            );
         });
 
-    },{
-        threshold:0.5
+        indicator?.classList.toggle("dark-mode", active);
+
+    }, {
+        threshold: 0
     });
 
-    lightSections.forEach(section=>{
+    lightSections.forEach(section => {
         colorObserver.observe(section);
     });
 }
+
+
 
 window.addEventListener("DOMContentLoaded", init);
 
