@@ -82,6 +82,9 @@
     text-shadow: none;
 }
 
+.white-context a{
+    color: inherit;
+}
 
 .access-subtitle {
     font-size: 16px;
@@ -117,34 +120,6 @@
     margin: 20px 0 0;
     text-align: right;
     text-shadow: none;
-}
-
-.note-board {
-    width: min(80%, 600px);
-    padding: 24px 26px;
-    margin: 0 auto 20px;
-    background: #ffffff;
-    border: 2px solid #364d33;
-    border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(90, 72, 44, 0.12);
-}
-
-.note-subtitle {
-    font-size: 16px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    text-align: left;
-    color: #333333;
-    font-weight: 600;
-}
-
-.note-context {
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    text-align: left;
-    color: #555555;
-    line-height: 1.9;
 }
 
 .access-context {

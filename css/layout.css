@@ -18,7 +18,7 @@ body.page-detail {
 .greeting,
 .schedule,
 .access,
-.note,
+.garally,
 .form {
     /* position: relative; */
     width: 100%;
@@ -31,7 +31,7 @@ body.page-detail {
 
 .cover,
 .greeting,
-.note,
+.garally,
 .form {
     background:url("../images/white.png");
     background-size: 400px auto;
@@ -116,6 +116,7 @@ body.page-detail #page {
     display: flex;
     gap: 30px;
     flex-wrap: nowrap;
+    padding: 10px;
 }
 .host-image{
     width: 80%;

@@ -9,6 +9,7 @@
     font-size: 18px;
     letter-spacing: 2px;
     cursor: pointer;
+    font-family: 'Shippori Mincho', serif;
 }
 
 #rsvp-form {
@@ -36,8 +37,16 @@
     border: 1px solid #e6e7e5;
     border-radius: 8px;
     font-size: 15px;
+    font-family: 'Shippori Mincho', serif;
 }
 
+.form-group p,
+.form-group a {
+    margin: 0;
+    font-size: 15px;
+    color: #000000;
+    font-family: 'Shippori Mincho', serif;
+}
 .name-row {
     display: flex;
     /* gap: 20px; */
