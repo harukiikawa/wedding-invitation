@@ -237,20 +237,15 @@
                         | 電車をご利用の方
                     </div>
                     <div class="access-context">
-                        東京メトロ南北線・都営大江戸線 …麻布十番 徒歩8分<br>
-                        都営大江戸線 …赤羽橋 徒歩8分<br>
-                        都営三田線 …芝公園 徒歩13分<br>
-                        都営浅草線 …三田 徒歩15分<br>
-                        JR（山手線・京浜東北線）…田町 徒歩15分<br>
+                        麻布十番駅（南北線/大江戸線）2番出口…徒歩8分<br>
+                        赤羽橋駅（大江戸線）赤羽橋口…徒歩8分<br>
+                        芝公園駅/三田駅/田町駅…徒歩13〜15分
                     </div>
                     <div class="access-subtitle">
                         | バスをご利用の方
                     </div>
                     <div class="access-context">
-                        都06（渋谷駅前-新橋駅前）…二の橋 徒歩5分<br>
-                        反96（五反田駅行・品川車庫行 他）…二の橋 徒歩5分<br>
-                        田87（渋谷駅-田町駅）…慶応義塾大学前 徒歩7分<br>
-                        東98（等々力駅前-東京駅南口）…赤羽橋 徒歩7分<br>
+                        「二の橋」バス停…徒歩5分<br>
                     </div>
                 </div>
 
@@ -271,6 +266,13 @@
                     <div class="rsvp-container">
                         <form id="rsvp-form">
 
+                            <div class="form-group">
+
+                                <p>
+                                    お手数ながらご都合の程を <span style="text-decoration: underline;">9月20日（日）まで</span> にご一報賜りますようお願い申し上げます
+                                </p>
+
+                            </div>
                             <div class="form-group">
                                 <label>ご出欠<span>*</span></label>
 
@@ -320,28 +322,17 @@
                             <div class="form-group">
                                 <label>アレルギー</label>
 
-                                <textarea name="allergy" rows="3" placeholder="なしの場合は『なし』とご記入ください"></textarea>
+                                <textarea name="allergy" rows="1" placeholder="なしの場合は『なし』とご記入ください"></textarea>
 
                             </div>
 
-                            <!-- 着付け -->
-                            <div class="check-item">
 
-                                <input type="checkbox" id="dress" name="dressing" value="希望する">
-
-                                <label for="dress">
-                                    着付けを希望します
-                                </label>
-
-                            </div>
 
 
                             <div class="form-group">
 
                                 <label>同伴者</label>
-
-                                <input type="text" name="companion">
-
+                                <textarea name="companion" rows="1" placeholder="同伴者がいらっしゃる場合はご入力ください"></textarea>
                             </div>
 
                             <div class="form-group">
@@ -351,14 +342,25 @@
                                 <textarea name="message" rows="5"></textarea>
 
                             </div>
-                            <div class="form-group">
 
-                                <p>※2次会、着付け、オンラインご祝儀については、こちらをご確認ください。<br>
-                                    <a href="detail.html#footer">詳細はこちら</a>
-                                </p>
+                            <!-- ご祝儀 -->
+                            <div class="form-group">
+                                <div class="form-subgroup">
+                                    <p>
+                                        ご祝儀をご用意いただける場合は、当日身軽にお越しいただくため、
+                                        事前のお振込み窓口もご用意しております。ご都合に合わせてご活用ください。<br>
+                                        希望される場合は、後ほどご案内をお送りします。
+                                    </p>
+                                </div>
+                                <div class="check-item">
+                                    <input type="checkbox" id="prepayment" name="prepayment" value="希望する">
+
+                                    <label for="prepayment">
+                                        事前のお振込みを希望します
+                                    </label>
+                                </div>
 
                             </div>
-
                             <button id="submitButton" type="submit">
 
                                 送信する
@@ -373,8 +375,39 @@
                     </div>
 
                     <div id="result"></div>
-                    <img class="section-image" src="images/form.jpg" alt="form image">
+                    <!-- <img class="section-image" src="images/form.jpg" alt="form image"> -->
                 </div>
+            </section>
+
+            <section id="note" class="note">
+                <div class="overlay">
+                    <div class="note-main-contaner">
+                        <div class="detail-note-title">
+                            Note
+                        </div>
+
+                        <div class="note-container">
+
+                            <div class="note-item">
+                                <div class="note-subtitle">2次会について</div>
+                                <div class="note-context">
+                                    場所：浜松町キッチン<br>
+                                    時間：16:30-18:30<br>
+                                    詳細については<a href="https://docs.google.com/forms/d/e/1FAIpQLSeO0Xg_84ViMag47meWprSgxCOCLlLFYJSgGrdixZraliMjPA/viewform?usp=publish-editor" target="_blank">こちら</a>からご確認ください
+                                </div>
+                            </div>
+
+                            <div class="note-item">
+                                <div class="note-subtitle">着付け・ヘアメイク</div>
+                                <div class="note-context">
+                                    ご希望の場合は別途ご連絡ください。会場内のサービスをご案内します。（有料）
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <section id="garally" class="garally">
@@ -387,23 +420,29 @@
                         <div class="slide img-01"></div>
                         <div class="slide img-02"></div>
                         <div class="slide img-03"></div>
+                        <div class="slide img-04"></div>
                         <button class="slider-button slider-button-prev" type="button" aria-label="前の写真へ">‹</button>
                         <button class="slider-button slider-button-next" type="button" aria-label="次の写真へ">›</button>
                     </div>
 
                 </div>
             </section>
+<!--
+            <section id="thanks" class="thanks">
+                <img class="section-image" src="images/thanks.png" alt="thanks image">
+            </section> -->
+
             <div id="footer"></div>
         </div>
     </div>
-    <div class="scroll-indicator floating-ui">
+    <!-- <div class="scroll-indicator floating-ui">
         <span class="scroll-text">SCROLL</span>
         <span class="scroll-line">
             <span class="scroll-dot"></span>
         </span>
 
     </div>
-    <a href="detail.html#form" class="footer-button floating-ui">Form</a>
+     <a href="detail.html#form" class="footer-button floating-ui">Form</a> -->
 
 
     <script src="js/menu.js"></script>

@@ -110,7 +110,6 @@ async function init() {
 
 window.addEventListener("DOMContentLoaded", init);
 
-
 window.addEventListener("load", () => {
 
     const loading = document.getElementById("loading");
@@ -118,7 +117,7 @@ window.addEventListener("load", () => {
 
     if (!page) return;
 
-    // loading が既に削除されている
+    // ローディング画面自体を削除した場合でも、初期表示時は必ず page を表示する
     if (!loading) {
         page.classList.add("show");
         return;
@@ -136,7 +135,6 @@ window.addEventListener("load", () => {
 
         loading.classList.add("hide");
 
-        // 少し待ってからCoverを表示
         setTimeout(() => {
             page.classList.add("show");
         }, 400);

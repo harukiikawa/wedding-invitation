@@ -18,7 +18,7 @@
 }
 
 .form-group {
-    /* margin-bottom: 12px; */
+    margin-bottom: 8px;
     text-align: left;
 }
 
@@ -49,7 +49,7 @@
 }
 .name-row {
     display: flex;
-    /* gap: 20px; */
+    gap: 20px;
     width: 100%;
     max-width: 600px;
 }
@@ -130,7 +130,7 @@
 
 .attendance {
     display: flex;
-    /* gap: 15px; */
+    gap: 20px;
     flex-wrap: nowrap;
 }
 
@@ -204,18 +204,18 @@
 
     left:50%;
 
-    width:2px;
+    width:1px;
     height:100%;
 
-    background:#e6e7e5;
+    background:rgba(230, 231, 229, 0.9);
 
     transform:translateX(-50%);
 }
 
 .dot{
 
-    width:12px;
-    height:12px;
+    width:8px;
+    height:8px;
 
     border-radius:50%;
 

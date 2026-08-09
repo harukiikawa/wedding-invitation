@@ -32,16 +32,22 @@ body.page-detail {
 .cover,
 .greeting,
 .garally,
-.form {
+.form,
+.note,
+.thanks {
     background:url("../images/white.png");
     background-size: 400px auto;
     background-repeat: repeat;
+}
+.note,
+.thanks {
+    display: flex;
+    justify-content: center;
 }
 
 .schedule,
 .access{
     background:url("../images/background.jpg");
-
     background-size: 400px auto;
     background-repeat: repeat;
 }
@@ -94,6 +100,14 @@ body.page-detail #page {
     color: #fff;
 }
 
+
+.note .overlay {
+    width: min(100%, 600px);
+    background:url("../images/note.jpg");
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
 .overlay.cover {
     justify-content: center;
 }
@@ -114,7 +128,6 @@ body.page-detail #page {
 
 .host-container{
     display: flex;
-    gap: 30px;
     flex-wrap: nowrap;
     padding: 10px;
 }
@@ -161,7 +174,19 @@ iframe {
     gap : 15px;
 }
 
+.note-main-contaner{
+    width: 80%;
+    background:url("../images/white.png");
+    background-size: 400px auto;
+    background-repeat: repeat;
+    margin:60px;
+    padding: 0 20px 40px;
+}
 
+.note-item{
+    margin: 0 10px 15px;
+    border-bottom: 1px solid #555555; /* 薄いグレーの区切り線 */
+}
 
 @media (max-width: 768px) {
     .cover .background {

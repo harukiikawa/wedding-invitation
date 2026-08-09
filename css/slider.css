@@ -72,6 +72,10 @@
    background-image: url('../images/thumbnail03.jpg');
 }
 
+.img-04 {
+   background-image: url('../images/thumbnail04.jpg');
+}
+
 @media screen and (min-width: 768px) {
    .img-frame {
       width: 70%;
