@@ -6,13 +6,12 @@ const GAS_URL =
 const form =
     document.getElementById("rsvp-form");
 
-
-if (form){
+if (form) {
     const button =
         document.getElementById("submitButton");
 
     const loading =
-        document.getElementById("loading");
+        document.getElementById("loading") || document.getElementById("sending");
 
     const result =
         document.getElementById("result");
@@ -21,11 +20,17 @@ if (form){
 
         e.preventDefault();
 
+        if (!button) return;
+
         button.disabled = true;
 
-        loading.style.display = "block";
+        if (loading) {
+            loading.style.display = "block";
+        }
 
-        result.innerHTML = "";
+        if (result) {
+            result.innerHTML = "";
+        }
 
         const formData =
             new FormData(form);
@@ -44,24 +49,29 @@ if (form){
 
             console.log(json);
 
-            if (json.status === "success") {
-                result.textContent = "回答ありがとうございました。";
-            } else {
-                result.textContent = json.message;
+            if (result) {
+                if (json.status === "success") {
+                    result.textContent = "回答ありがとうございました。";
+                } else {
+                    result.textContent = json.message;
+                }
             }
 
         } catch (error) {
 
             console.log(error);
 
-            result.innerHTML =
-                "通信エラーが発生しました。";
+            if (result) {
+                result.innerHTML = "通信エラーが発生しました。";
+            }
 
+        } finally {
             button.disabled = false;
 
+            if (loading) {
+                loading.style.display = "none";
+            }
         }
-
-        loading.style.display = "none";
 
     });
 }
