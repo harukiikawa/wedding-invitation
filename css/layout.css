@@ -31,6 +31,7 @@ body.page-detail {
 
 .cover,
 .greeting,
+.host,
 .garally,
 .form,
 .note,
@@ -129,7 +130,7 @@ body.page-detail #page {
 .host-container{
     display: flex;
     flex-wrap: nowrap;
-    padding: 10px;
+    padding: 30px;
 }
 .host-image{
     width: 80%;
@@ -176,16 +177,13 @@ iframe {
 
 .note-main-contaner{
     width: 80%;
-    background:url("../images/white.png");
-    background-size: 400px auto;
-    background-repeat: repeat;
+    background:#e6e7e5;
     margin:60px;
     padding: 0 20px 40px;
 }
 
 .note-item{
     margin: 0 10px 15px;
-    border-bottom: 1px solid #555555; /* 薄いグレーの区切り線 */
 }
 
 @media (max-width: 768px) {

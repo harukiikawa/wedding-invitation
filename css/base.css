@@ -6,20 +6,14 @@
 
 html,
 body {
-    font-family: "Noto Serif JP", serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Shippori Mincho', serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: #ffffff;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* font-family: 'Times New Roman', serif; */
-    font-family: 'Shippori Mincho', serif;
 }
 
 body,

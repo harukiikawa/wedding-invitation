@@ -38,43 +38,43 @@ body {
 }
 
 #page.fade-in-up {
-    animation: fade-in-up .6s ease forwards;
+    animation: fade-in-up 1s ease forwards;
 }
 
 #page.fade-in-down {
-    animation: fade-in-down .6s ease forwards;
+    animation: fade-in-down 1s ease forwards;
 }
 
 #page.fade-out-up {
-    animation: fade-out-up .5s ease forwards;
+    animation: fade-out-up .7s ease forwards;
 }
 
 body.fade-out-up #header,
 body.fade-out-up .menu-button,
 body.fade-out-up .menu {
-    animation: header-fade-out-up .5s ease forwards;
+    animation: header-fade-out-up .7s ease forwards;
 }
 
 #page.fade-out-down {
-    animation: fade-out-down .5s ease forwards;
+    animation: fade-out-down .7s ease forwards;
 }
 
 body.fade-out-down #header,
 body.fade-out-down .menu-button,
 body.fade-out-down .menu {
-    animation: header-fade-out-down .5s ease forwards;
+    animation: header-fade-out-down .7s ease forwards;
 }
 
 body.fade-in-up #header,
 body.fade-in-up .menu-button,
 body.fade-in-up .menu {
-    animation: header-fade-in-up .6s ease forwards;
+    animation: header-fade-in-up .8s ease forwards;
 }
 
 body.fade-in-down #header,
 body.fade-in-down .menu-button,
 body.fade-in-down .menu {
-    animation: header-fade-in-down .6s ease forwards;
+    animation: header-fade-in-down .8s ease forwards;
 }
 
 @keyframes fade-out-up {

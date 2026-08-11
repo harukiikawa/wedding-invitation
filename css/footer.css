@@ -14,13 +14,20 @@
     font-size: 30px;
     padding: 40px 0 0;
 }
+
+#footer .conclusion{
+    text-align: center;
+    color: #e6e7e5;
+    font-size: 12px;
+    padding: 20px 0 40px;
+}
 .logo-container{
     display: flex;
     justify-content: center; /* 横中央 */
     margin-bottom: 20px;
 }
 .footer-biglogo{
-    height:200px;
+    height:100px;
     width:auto;
 }
 

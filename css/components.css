@@ -24,7 +24,6 @@
 
 .form-group label {
     display: block;
-    margin-top: 6px;
     color: #555555;
     font-size: 15px;
 }
@@ -35,9 +34,9 @@
     width: 100%;
     padding: 8px;
     border: 1px solid #e6e7e5;
+    font-family: 'Shippori Mincho', serif;
     border-radius: 8px;
     font-size: 15px;
-    font-family: 'Shippori Mincho', serif;
 }
 
 .form-group p,
@@ -45,7 +44,7 @@
     margin: 0;
     font-size: 15px;
     color: #000000;
-    font-family: 'Shippori Mincho', serif;
+    margin: 0 0 20px;
 }
 .name-row {
     display: flex;
