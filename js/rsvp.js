@@ -31,7 +31,8 @@ if (form) {
         button.disabled = true;
 
         if (loading) {
-            loading.style.display = "block";
+            loading.innerHTML = '<span class="sending-spinner" aria-hidden="true"></span><span class="sending-text">送信中...</span>';
+            loading.style.display = "flex";
         }
 
         if (result) {
@@ -76,6 +77,7 @@ if (form) {
 
             if (loading) {
                 loading.style.display = "none";
+                loading.innerHTML = "";
             }
         }
 

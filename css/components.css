@@ -63,7 +63,35 @@
     flex: 1;
 }
 
-#sending,
+#sending {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #364d33;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.08em;
+}
+
+#sending .sending-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(54, 77, 51, 0.25);
+    border-top-color: #364d33;
+    border-radius: 50%;
+    animation: sending-spin 0.9s linear infinite;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#sending .sending-text {
+    position: relative;
+    display: inline-block;
+    animation: sending-pulse 1.2s ease-in-out infinite;
+}
+
 #result {
     color: #364d33;
     margin-top: 20px;
@@ -71,6 +99,22 @@
     text-align: center;
 }
 
+@keyframes sending-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sending-pulse {
+    0%, 100% {
+        opacity: 0.6;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-1px);
+    }
+}
 
 .rsvp-container,
 .greeting-container {
