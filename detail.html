@@ -73,27 +73,52 @@
 
                     <div class="host-container">
                         <div class="personal">
-                            <img class="host-image" src="images/haruki.jpg" alt="haruki">
-                            <div class="host-label">
-                                Haruki
+                            <div class="host-subcontainer">
+                                <img class="host-image" src="images/haruki.jpg" alt="haruki">
                             </div>
+                            <div class="host-subcontainer">
+                                <div class="host-label">
+                                    Haruki
+                                </div>
+                                <div class="context">
+                                    <div class="host-sub-context">
+                                        北海道生まれ<br>
+                                        2000.8.23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="host-subcontainer">
                             <div class="context">
                                 <div class="sub-context">
-                                    出身地：北海道<br>
-                                    誕生日：<span style="display:inline-block;">2000年8月23日</span>
+                                    多くのご縁に恵まれ 本日を迎えることができました<br>
+                                    皆さまも楽しいひとときをお過ごしいただけますと<br>幸いです
                                 </div>
                             </div>
                         </div>
 
                         <div class="personal">
-                            <img class="host-image" src="images/cotori.jpg" alt="cotori">
-                            <div class="host-label">
-                                Cotori
+                            <div class="host-subcontainer">
+                                <div class="host-label">
+                                    Cotori
+                                </div>
+                                <div class="context">
+                                    <div class="host-sub-context">
+                                        新潟県生まれ<br>
+                                        2001.3.16
+                                    </div>
+                                </div>
                             </div>
+                            <div class="host-subcontainer">
+                                <img class="host-image" src="images/cotori.jpg" alt="cotori">
+                            </div>
+                        </div>
+                        <div class="host-subcontainer">
                             <div class="context">
                                 <div class="sub-context">
-                                    出身地：新潟県<br>
-                                    誕生日：<span style="display:inline-block;">2001年3月16日</span>
+                                    日頃の感謝を込めて歴史ある素敵な会場で<br>
+                                    皆さまと楽しいひとときを過ごせればと思っています<br>
+                                    当日お会いできますことを心より楽しみにしております
                                 </div>
                             </div>
                         </div>
@@ -115,9 +140,9 @@
                 <div class="schedule-container">
 
                     <div class="schedule-date">
-                        <span class="date-side">OCT</span>
+                        <span class="date-left"><span class="date-text">OCT</span></span>
                         <span class="date-main">25</span>
-                        <span class="date-side">2026</span>
+                        <span class="date-right"><span class="date-text">2026</span></span>
                     </div>
 
                     <div class="timeline">
@@ -174,18 +199,19 @@
                             </div>
                         </div>
                     </div>
+                    <p class="white-context">
+                        挙式にもご出席賜りたく<span style="font-weight: bold;">午前10時25分</span>までに<br>
+                        お越しくださいますようお願い申し上げます
+                    </p>
                 </div>
-                <p class="white-context">
-                    挙式にもご出席賜りたく<span style="text-decoration: underline;">午前10時25分</span>までに<br>
-                    お越しくださいますようお願い申し上げます
-                </p>
+
 
 
                 <img class="section-image" src="images/schedule.jpg" alt="schedule image">
             </div>
         </section>
 
-        <section id="access" class="access">
+        <section id="place" class="place">
             <div class="overlay">
                 <div class="detail-white-title">
                     Place
@@ -198,7 +224,7 @@
                     〒108-0073
                     東京都港区三田2-3-7<br>
                     TEL: 03-3453-3011<br>
-                    HP: <a href="https://www.tsunamachimitsuiclub.co.jp/">綱町三井倶楽部 TSUNAMACHI MITSUI CLUB</a>
+                    HP: <a href="https://www.tsunamachimitsuiclub.co.jp/">TSUNAMACHI MITSUI CLUB</a>
                 </div>
 
                 <div class="detail-white-title">
@@ -210,7 +236,7 @@
                     width="100%" height="300" style="border:0;border-radius:0" ; allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <div class="" access-container>
+                <div class="access-container">
                     <div class="access-subtitle">
                         | 電車をご利用の方
                     </div>
@@ -227,7 +253,7 @@
                     </div>
                 </div>
 
-                <div class="white-context">
+                <div class="white-context-big">
                     会場周辺は坂道が多いため<br>
                     足元にお気をつけてお越しくださいませ
                 </div>
@@ -302,7 +328,7 @@
                             <div class="form-group">
                                 <label>アレルギー</label>
 
-                                <textarea name="allergy" rows="1" placeholder="なしの場合は『なし』とご記入ください"></textarea>
+                                <textarea name="allergy" rows="1" placeholder="アレルギーをお持ちの方のみご入力ください"></textarea>
 
                             </div>
 
@@ -312,14 +338,14 @@
                             <div class="form-group">
 
                                 <label>同伴者</label>
-                                <textarea name="companion" rows="2" placeholder="同伴者がいらっしゃる場合はご入力ください"></textarea>
+                                <textarea name="companion" rows="1" placeholder="同伴者がいらっしゃる場合はご入力ください"></textarea>
                             </div>
 
                             <div class="form-group">
 
                                 <label>メッセージ</label>
 
-                                <textarea name="message" rows="4"></textarea>
+                                <textarea name="message" rows="3"></textarea>
 
                             </div>
 
@@ -327,14 +353,13 @@
                             <div class="form-group">
                                 <div class="form-subgroup">
                                     <label>
-                                        ご祝儀について
+                                        | ご祝儀について
                                     </label>
-                                    <label>
+                                    <sub-label>
                                         ご祝儀をご用意いただける場合は<br>
-                                        当日身軽にお越しいただくため<br>
                                         事前のお振込み口座もご用意しております<br>
                                         ご都合に合わせてご活用ください
-                                    </label>
+                                        </label>
                                 </div>
                                 <div class="check-item">
                                     <input type="checkbox" id="prepayment" name="prepayment" value="希望する">
@@ -343,7 +368,7 @@
                                         事前のお振込みを希望します
                                     </label>
                                 </div>
-                                <label>※ご希望された方には 後ほどご案内をお送りします</label>
+                                <sub-label>※ご希望された方には 後ほどご案内をお送りします</label>
                             </div>
                             <button id="submitButton" type="submit">
 
@@ -373,52 +398,55 @@
                         <div class="note-container">
 
                             <div class="note-item">
-                                <div class="note-subtitle">2次会について</div>
+                                <div class="note-subtitle">二次会について</div>
                                 <div class="note-context">
                                     場所：浜松町キッチン<br>
                                     時間：16:30-18:30<br>
-                                    一次会参加される方に 別途ご連絡いたします
                                 </div>
-                            </div>
-
-                            <div class="note-item">
-                                <div class="note-subtitle">着付け</div>
                                 <div class="note-context">
-                                    ご希望の場合は別途ご連絡ください<br>
-                                    会場内のサービスをご案内します（有料）
+                                    結婚式にご参加される方には別途<br>ご連絡いたします
                                 </div>
                             </div>
-
                         </div>
+
+                        <div class="note-item">
+                            <div class="note-subtitle">着付け</div>
+                            <div class="note-context">
+                                ご希望の場合は別途ご連絡ください<br>
+                                会場内のサービスをご案内します<br>（有料）
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+        </div>
 
-            </section>
+        </section>
 
-            <section id="garally" class="garally">
+        <section id="gallery" class="gallery">
 
-                <div class="overlay">
-                    <div class="detail-green-title">
-                        Garally
-                    </div>
-                    <div class="img-frame">
-                        <div class="slide img-01"></div>
-                        <div class="slide img-02"></div>
-                        <div class="slide img-03"></div>
-                        <div class="slide img-04"></div>
-                        <button class="slider-button slider-button-prev" type="button" aria-label="前の写真へ">‹</button>
-                        <button class="slider-button slider-button-next" type="button" aria-label="次の写真へ">›</button>
-                    </div>
-
+            <div class="overlay">
+                <div class="detail-green-title">
+                    Gallery
                 </div>
-            </section>
-<!--
+                <div class="img-frame">
+                    <div class="slide img-01"></div>
+                    <div class="slide img-02"></div>
+                    <div class="slide img-03"></div>
+                    <div class="slide img-04"></div>
+                    <button class="slider-button slider-button-prev" type="button" aria-label="前の写真へ">‹</button>
+                    <button class="slider-button slider-button-next" type="button" aria-label="次の写真へ">›</button>
+                </div>
+
+            </div>
+        </section>
+        <!--
             <section id="thanks" class="thanks">
                 <img class="section-image" src="images/thanks.png" alt="thanks image">
             </section> -->
 
-            <div id="footer"></div>
-        </div>
+        <div id="footer"></div>
+    </div>
     </div>
     <!-- <div class="scroll-indicator floating-ui">
         <span class="scroll-text">SCROLL</span>

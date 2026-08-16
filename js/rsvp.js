@@ -22,6 +22,12 @@ if (form) {
 
         if (!button) return;
 
+        const confirmed = window.confirm("入力内容を送信してもよろしいですか？");
+
+        if (!confirmed) {
+            return;
+        }
+
         button.disabled = true;
 
         if (loading) {
