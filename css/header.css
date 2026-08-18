@@ -67,7 +67,7 @@ body.page-detail #header {
 .menu-button span {
     width: 22px;
     height: 2px;
-    background: #000000;
+    background: #364d33;
     transition: .3s;
 }
 
@@ -77,7 +77,6 @@ body.page-detail #header {
     right: 0;
     width: 280px;
     height: 100vh;
-    border: 1px solid #364d33;
     background:url("../images/white.png");
     background-size: 400px auto;
     background-repeat: repeat;
@@ -90,6 +89,7 @@ body.page-detail #header {
     visibility: hidden;
     pointer-events: none;
     z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .menu.open {
