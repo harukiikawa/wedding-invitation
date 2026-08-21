@@ -9,7 +9,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* font-family: 'Shippori Mincho', serif; */
     font-family: "Zen Old Mincho", serif;
     scroll-behavior: smooth;
     overflow-x: hidden;

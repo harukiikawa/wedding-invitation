@@ -65,7 +65,6 @@ async function init() {
     }
 
     initMenu();
-    playTransition();
 
     showButtonLater();
 

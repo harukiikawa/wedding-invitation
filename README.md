@@ -1,9 +1,9 @@
 # wedding-invite
 
-```text
-url: https://harukiikawa.github.io/wedding-invitation/
+```
+https://harukiikawa.github.io/wedding-invitation/
 ```
 
 ## note
-- 無断で転用しないようお願いします
-- バグなどを見つけたら、連絡ください
+- バグなどを見つけたら、ご連絡ください
+- 結婚式楽しみましょう！

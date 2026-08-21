@@ -157,7 +157,6 @@
     transform: translateX(-50%);
     width: 2px;
     height: 10px;
-    /* border-radius: 50%; */
     background: rgb(255, 255, 255);
 
     animation: scrollDot 1.8s ease-in-out infinite;
