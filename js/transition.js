@@ -4,6 +4,7 @@ const TRANSITION_KEY = "pageTransitionDirection";
 
 let moved = false;
 let touchStartY = 0;
+let touchStartedAtTop = false;
 
 function isAtFirstGreetingTop() {
     const firstSection = document.getElementById("greeting");
@@ -166,6 +167,7 @@ function initTransition(options) {
 
         touchStartY =
             e.touches[0].clientY;
+        touchStartedAtTop = isAtFirstGreetingTop();
 
     });
 
@@ -179,13 +181,11 @@ function initTransition(options) {
 
         const touchEndY =
             e.changedTouches[0].clientY;
-        const atTop = isAtFirstGreetingTop();
-
         // 上スワイプ
         if (
 
             swipe === "up" &&
-            atTop &&
+            touchStartedAtTop &&
             touchStartY - touchEndY > 80
 
         ) {
@@ -202,7 +202,7 @@ function initTransition(options) {
         if (
 
             swipe === "down" &&
-            atTop &&
+            touchStartedAtTop &&
             touchEndY - touchStartY > 80
 
         ) {
