@@ -152,7 +152,7 @@ body.page-detail #page {
     justify-content: center;
     width: min(100%, 500px);
     gap: 15px;
-    margin: 30px 0 0;
+    margin: 40px 0 0;
 }
 
 .host-image{
